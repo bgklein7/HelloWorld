@@ -15,17 +15,17 @@ namespace HelloWorld
             string messageTwo = "I am Spartacus";
 
             //Part two set initial Spartacus attributes
-            int ageOne = 35;
-            int ageTwo = 45;
-            int ageThree = 80;
-            double heightOne = 72.50;
-            double heightTwo = 91.45;
-            float weightOne = 210.0284606f;
-            float weightTwo = 331.12345678f;
-            bool isGodLikeOne = true;
-            bool isGodLikeTwo = false;
-            char genderMale = 'M';
-            char genderFemale = 'F';
+            //int ageOne = 35;
+            //int ageTwo = 45;
+            //int ageThree = 80;
+            //double heightOne = 72.50;
+            //double heightTwo = 91.45;
+            //float weightOne = 210.0284606f;
+            //float weightTwo = 331.12345678f;
+            //bool isGodLikeOne = true;
+            //bool isGodLikeTwo = false;
+            //char genderMale = 'M';
+            //char genderFemale = 'F';
 
             ////Part three display variable values
             //Console.WriteLine(messageOne);////displays initial greeting to console
@@ -73,8 +73,8 @@ namespace HelloWorld
             //Console.WriteLine("I weigh around {0} pounds, and I am around {1} inches tall.", weightOne, heightOne);
 
             //Part nine string equality examples
-            Console.WriteLine(messageTwo.Equals(messageOne));
-            Console.WriteLine(messageTwo.Equals("I am Spartacus"));
+            //Console.WriteLine(messageTwo.Equals(messageOne));
+            //Console.WriteLine(messageTwo.Equals("I am Spartacus"));
 
             ////Part ten string length examples
             //int messOneLength = messageOne.Length;
@@ -112,14 +112,14 @@ namespace HelloWorld
             //    Console.WriteLine("We will march to Nuceria");
 
             //Part 12 Conditional Example
-            Console.WriteLine("What is your rank, soldier?");
-            string rank = Console.ReadLine();
+            //Console.WriteLine("What is your rank, soldier?");
+            //string rank = Console.ReadLine();
 
-            Console.WriteLine("What is your age, soldier?");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("What is your age, soldier?");
+            //int age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("What is your job, soldier?");
-            string job = Console.ReadLine();
+            //Console.WriteLine("What is your job, soldier?");
+            //string job = Console.ReadLine();
 
             //if ((rank == "officer") || (age <= 26))
             //{
@@ -133,28 +133,62 @@ namespace HelloWorld
             //{
             //    Console.WriteLine("Sorry you are staying home.");
             //}
-            switch (job)
-            {
-                case "infantry":
-                    Console.Write("You will carry a sword");
-                    break;
+            //switch (job)
+            //{
+            //    case "infantry":
+            //        Console.Write("You will carry a sword");
+            //        break;
 
-                case "archers":
-                    Console.WriteLine("You will carry a bow and arrow");
-                    break;
+            //    case "archers":
+            //        Console.WriteLine("You will carry a bow and arrow");
+            //        break;
 
-                case "supply":
-                    Console.WriteLine("You will carry pots and pans");
-                    break;
+            //    case "supply":
+            //        Console.WriteLine("You will carry pots and pans");
+            //        break;
 
-                case "specialist":
-                    Console.WriteLine("You will operate the catapault");
-                    break;
+            //    case "specialist":
+            //        Console.WriteLine("You will operate the catapault");
+            //        break;
 
-                default:
-                    Console.WriteLine("You will ride horseback");
-                    break;
-            }
+            //    default:
+            //        Console.WriteLine("You will ride horseback");
+            //        break;
+            //}
+
+            //Part 13 array examples
+            string[] foodList = new string[5];
+            foodList[0] = "Milk";
+            foodList[1] = "Fruit";
+            foodList[2] = "Meat";
+            foodList[3] = "Wine";
+            foodList[4] = "Bread";
+            Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+
+            int[] foodAmount = new int[5];
+            foodAmount[0] = 1000;
+            foodAmount[1] = 100;
+            foodAmount[2] = 2000;
+            foodAmount[3] = 10000;
+            foodAmount[4] = 1500;
+
+            int[] qtyFood = new int[] { 1000, 100, 2000, 10000, 1500 };
+            Console.WriteLine(foodList[0] + ": " + qtyFood[0] + ", " + foodList[1] + ": " + qtyFood[1] + ", " + foodList[2] + ": " + qtyFood[2] + ", " + foodList[3] + ": " + qtyFood[3] + ", " + foodList[4] + ": " + qtyFood[4]);
+            Console.WriteLine(foodList.Length);
+
+            string[] elements = messageTwo.Split(' ');
+            Console.WriteLine(elements[0]);
+            Console.WriteLine(elements[1]);
+            Console.WriteLine(elements[2]);
+
+            String myName = "Sue";
+            char[] letters = myName.ToCharArray();
+
+            Console.WriteLine("The first letter of my name is " + letters[0]);
+            Console.WriteLine("{0}{1}{2}", letters[1], letters[0], letters[2]);
+            
+
+            
         }
     }
 }
