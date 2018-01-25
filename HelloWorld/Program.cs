@@ -12,18 +12,18 @@ namespace HelloWorld
         {
             //Part one greetings statement
             //string messageOne = "Hello World!";
-            //string messageTwo = "I am Spartacus";
+            string messageTwo = "I am Spartacus";
 
             //Part two set initial Spartacus attributes
             //int ageOne = 35;
-            //int ageTwo = 45;
+            int ageTwo = 34;
             //int ageThree = 80;
             //double heightOne = 72.50;
             //double heightTwo = 91.45;
             //float weightOne = 210.0284606f;
             //float weightTwo = 331.12345678f;
-            //bool isGodLikeOne = true;
-            //bool isGodLikeTwo = false;
+            bool isGodLikeOne = true;
+            bool isGodLikeTwo = false;
             //char genderMale = 'M';
             //char genderFemale = 'F';
 
@@ -156,21 +156,21 @@ namespace HelloWorld
             //        break;
             //}
 
-            //Part 13 array examples
-            string[] foodList = new string[5];
-            foodList[0] = "Milk";
-            foodList[1] = "Fruit";
-            foodList[2] = "Meat";
-            foodList[3] = "Wine";
-            foodList[4] = "Bread";
-            //Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
+            ////Part 13 array examples
+            //string[] foodList = new string[5];
+            //foodList[0] = "Milk";
+            //foodList[1] = "Fruit";
+            //foodList[2] = "Meat";
+            //foodList[3] = "Wine";
+            //foodList[4] = "Bread";
+            ////Console.WriteLine("{0}, {1}, {2}, {3}, {4}", foodList[0], foodList[1], foodList[2], foodList[3], foodList[4]);
 
-            int[] foodAmount = new int[5];
-            foodAmount[0] = 1000;
-            foodAmount[1] = 100;
-            foodAmount[2] = 2000;
-            foodAmount[3] = 10000;
-            foodAmount[4] = 1500;
+            //int[] foodAmount = new int[5];
+            //foodAmount[0] = 1000;
+            //foodAmount[1] = 100;
+            //foodAmount[2] = 2000;
+            //foodAmount[3] = 10000;
+            //foodAmount[4] = 1500;
 
             //int[] qtyFood = new int[] { 1000, 100, 2000, 10000, 1500 };
             //Console.WriteLine(foodList[0] + ": " + qtyFood[0] + ", " + foodList[1] + ": " + qtyFood[1] + ", " + foodList[2] + ": " + qtyFood[2] + ", " + foodList[3] + ": " + qtyFood[3] + ", " + foodList[4] + ": " + qtyFood[4]);
@@ -249,7 +249,50 @@ namespace HelloWorld
             //    foodAmount[i] = int.Parse(Console.ReadLine());
             //}
 
-
+            int ageOne = 35;
+            bool isGodLike = true; // I am not showing all the code.
+            isGodLikeOne = IsGodLike(ageOne);
+            
+            Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
+            //isGodLikeOne = IsGodLike(ageTwo);
+            //Console.WriteLine("To say our hero is God like is " + isGodLikeOne);
+            Console.WriteLine(Reverse(messageTwo));
         }
+        //static string Reverse(string text)
+        //{
+        //    char[] cArray = text.ToCharArray();
+        //    string reverse = " ";
+        //    for (int i = cArray.Length - 1; i > -1; i--)
+        //    {
+        //        reverse += cArray[i];
+        //    }
+        //    return reverse;
+        //}
+
+        static int[] Reverse(string text)
+        {
+            char[] cArray = text.ToCharArray();
+            string reverse = " ";
+            for (int i = cArray.Length - 1; i > -1; i--)
+            {
+                reverse += cArray[i];
+            }
+            return reverse;
+        }
+        static bool IsGodLike(int age)
+        {
+            bool status;
+            if (age % 2 == 0)
+            {
+                status = false;
+            }
+            else
+            {
+                status = true;
+            }
+            return status;
+        }
+
     }
+
 }
