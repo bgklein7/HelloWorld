@@ -11,8 +11,8 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             //Part one greetings statement
-            string messageOne = "Hello World!";
-            string messageTwo = "I am Spartacus";
+            //string messageOne = "Hello World!";
+            //string messageTwo = "I am Spartacus";
 
             //Part two set initial Spartacus attributes
             //int ageOne = 35;
@@ -242,12 +242,14 @@ namespace HelloWorld
             //    action = Console.ReadLine();
             //} while (action != "exit");
 
-            //Part fifteen for-loop examples
-            for (int i = 0; i < foodAmount.Length; i++)
-            {
-                Console.WriteLine("Please enter amount of " + foodList[i]);
-                foodAmount[i] = int.Parse(Console.ReadLine());
-            }
+            ////Part fifteen for-loop examples
+            //for (int i = 0; i < foodAmount.Length; i++)
+            //{
+            //    Console.WriteLine("Please enter amount of " + foodList[i]);
+            //    foodAmount[i] = int.Parse(Console.ReadLine());
+            //}
+
+
         }
     }
 }
